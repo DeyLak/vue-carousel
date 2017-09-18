@@ -14,8 +14,8 @@ var banner = [
 module.exports = {
   entry: './src/',
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    filename: 'vue-carousel.js',
+    path: path.resolve(__dirname, '../lib'),
+    filename: 'index.js',
     library: 'VueCarousel',
     libraryTarget: 'umd'
   },
@@ -23,7 +23,7 @@ module.exports = {
     extensions: ['', '.js', '.vue'],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
-      'vue$': 'vue/dist/vue.common.js',
+      'vue$': 'vue/lib/vue.common.js',
     }
   },
   resolveLoader: {
